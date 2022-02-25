@@ -3,22 +3,25 @@ import styles from './SubHeader.module.css'
 const SubHeader = () => {
   return (
     <div className={styles.subheaderContainer}>
-      <div className="border border-green-700">
-        <div>
-          Medium is a place to <br />
-          write, read, and <br />
-          connect
-        </div>
+      <div className="px-10 space-y-5">
+        <h1 className="text-6xl max-w-xl font-serif">
+          <span className="underline decoration-black decoration-4">
+            Medium
+          </span>{' '}
+          is a place to write, read, and connect
+        </h1>
 
-        <div>
+        <h2>
           It's easy and free to post your thinking on any topic and connect with
           millions of readers.
-        </div>
+        </h2>
       </div>
 
-      <div className="border border-solid border-red-600">
-        <div className="text-9xl font-bold">M</div>
-      </div>
+      <img
+        src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
+        className="hidden md:inline-flex h-32 lg:h-full"
+        alt="medium"
+      />
     </div>
   )
 }
