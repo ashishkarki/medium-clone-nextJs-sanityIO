@@ -25,7 +25,6 @@ const Home = ({ posts }: HomeProps) => {
 
       <SubHeader />
 
-      {/* Posts */}
       <Posts posts={posts} />
     </div>
   )
